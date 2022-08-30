@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@id/nav_graph_id_home"
+    app:startDestination="@id/destination_home">
+    <fragment
+        android:id="@+id/destination_home"
+        android:label="@string/myApp"
+        android:name="com.example.home_ui.HomeFragment"
+        tools:layout="@layout/fragment_home">
+<!--       here actions and  deeplinks -->
+    </fragment>
+</navigation>

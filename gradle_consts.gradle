@@ -1,0 +1,31 @@
+ext {
+    gradle_version = '7.1.2'
+    core_ktx = "1.8.0"
+    androidx_fragment_ktx_version = "1.2.5"
+    appcompat = "1.4.2"
+    material = "1.6.1"
+    constraintlayout = "2.1.4"
+
+    kotlin_version = '1.6.10'
+
+    dagger_version = '2.40.5'
+    dagger_android = '2.35.1'
+
+    androidx_lifecycle_version = "2.2.0"
+
+    nav_version = '2.3.5'
+
+    rxjava2_version = '2.2.3'
+
+    rxjava2_android_version = '2.1.1'
+
+    rxkotlin_version = '2.3.0'
+
+    junit_version = '4.13.2'
+
+//    libraries = [
+//            daggerAnnotations: "com.google.dagger:dagger-compiler:$dagger_version",
+//            daggerAndroidAnnotations: "com.google.dagger:dagger-android-processor:$dagger_version"
+//    ]
+
+}

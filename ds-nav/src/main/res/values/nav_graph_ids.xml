@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+
+Only define top level graph id of your feature here.
+Do NOT define internal ids being used in your feature graph (e.g. destination id or action id) here.
+
+Hint: If your feature has multiple landing fragments accessed from outside of your feature,
+you have to create a graph per landing fragment.
+
+-->
+
+<resources>
+    <item name="nav_graph_id_home" type="id"/>
+</resources>

@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+<!--    <androidx.coordinatorlayout.widget.CoordinatorLayout-->
+<!--        android:id="@+id/container_coordinator"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent">-->
+
+<!--        <androidx.fragment.app.FragmentContainerView-->
+<!--            android:id="@+id/nav_host_container"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="0dp"-->
+<!--            app:layout_constraintBottom_toTopOf="@id/bottom_navigation"-->
+<!--            app:layout_constraintTop_toBottomOf="@+id/appbar" />-->
+
+<!--        <com.google.android.material.bottomnavigation.BottomNavigationView-->
+<!--            android:id="@+id/bottom_navigation"-->
+<!--            android:layout_width="@dimen/match_constraint"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            app:labelVisibilityMode="labeled"-->
+<!--            app:layout_constraintBottom_toBottomOf="parent"-->
+<!--            app:layout_constraintLeft_toLeftOf="parent"-->
+<!--            app:layout_constraintRight_toRightOf="parent"-->
+<!--            app:menu="@menu/bottom_nav_menu" />-->
+<!--    </androidx.coordinatorlayout.widget.CoordinatorLayout>-->
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:id="@+id/container_coordinator"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+
+            android:id="@+id/container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.google.android.material.appbar.AppBarLayout
+                android:id="@+id/appbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toTopOf="parent"
+                >
+
+                <androidx.appcompat.widget.Toolbar
+                    android:id="@+id/toolbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:contentInsetStartWithNavigation="0dp"
+                    />
+
+            </com.google.android.material.appbar.AppBarLayout>
+
+            <androidx.fragment.app.FragmentContainerView
+                android:id="@+id/nav_host_container"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                app:layout_constraintBottom_toTopOf="@id/bottom_navigation"
+                app:layout_constraintTop_toBottomOf="@+id/appbar"
+                />
+
+            <com.google.android.material.bottomnavigation.BottomNavigationView
+                android:id="@+id/bottom_navigation"
+                android:layout_width="@dimen/match_constraint"
+                android:layout_height="wrap_content"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:menu="@menu/bottom_nav_menu"
+                app:labelVisibilityMode="labeled"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="4dp"
+                android:background="@drawable/bottom_nav_shadow"
+                app:layout_constraintBottom_toTopOf="@id/bottom_navigation"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"/>
+
+<!--            <com.google.android.material.appbar.AppBarLayout-->
+<!--                android:id="@+id/appbarTransparent"-->
+<!--                android:layout_width="match_parent"-->
+<!--                app:theme="@style/TransparentActionBar"-->
+<!--                android:visibility="@{toolbarViewModel.visibilityTransparent}"-->
+<!--                android:background="@color/transparent"-->
+<!--                android:elevation="0dp"-->
+<!--                app:elevation="0dp"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                app:layout_constraintTop_toTopOf="parent">-->
+
+<!--                <androidx.appcompat.widget.Toolbar-->
+<!--                    android:id="@+id/toolbarTransparent"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    app:theme="@style/TransparentActionBar"-->
+<!--                    android:visibility="@{toolbarViewModel.visibilityTransparent}"-->
+<!--                    android:background="@color/transparent"-->
+<!--                    android:elevation="0dp"-->
+<!--                    app:elevation="0dp"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    app:contentInsetStartWithNavigation="0dp" />-->
+
+<!--            </com.google.android.material.appbar.AppBarLayout>-->
+
+<!--            <androidx.constraintlayout.widget.Barrier-->
+<!--                android:id="@+id/app_bar_barrier"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                app:barrierDirection="bottom"-->
+<!--                app:constraint_referenced_ids="appbar,appbarTransparent"/>-->
+
+<!--            <View-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="@dimen/match_constraint"-->
+<!--                app:layout_constraintTop_toTopOf="parent"-->
+<!--                app:layout_constraintBottom_toTopOf="@id/nav_host_container"-->
+<!--                android:elevation="@dimen/normal_25"-->
+<!--                android:visibility="@{toolbarViewModel.modalOverlayVisibility}"-->
+<!--                android:background="@color/colorModalDim"/>-->
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+
+</layout>
